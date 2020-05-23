@@ -3,37 +3,38 @@
 <p>Login form template `tpl-login.php`</p>
 <pre>
 	<code>
-<?php
-/*
-* template name: tpl-login
-*/
-get_header();
-?>
-<form id="login-Form-box" class="woocommerce-form woocommerce-form-login login" method="post">
-	<div class="row">
-		<div class="auth-content"></div>
-		<div class="col-12">
-			<div class="form-group">
-				<label for="emailID" class="sr-only">Email id</label>
-				<input type="email" class="form-control" placeholder="Email id" id="emailID" name="log" required="required" data-val="">
-			</div>
-		</div>
-		<div class="col-12">
-			<div class="form-group">
-				<label for="password" class="sr-only">Password</label>
-				<input type="password" class="form-control" placeholder="Password" id="password" name="pwd" required="required" data-val="">
-			</div>
-		</div>		
-		<div class="col-12 text-center">
-			<div class="form-group">
-				<input type="hidden" name="url" value="" id="urlRedirect">
-				<button type="submit" class="btn btn-primary" title="Login">Login</button>
-			</div>
-		</div>
-	</div>
-</form>
-<?php
-get_footer();	
+		&lt;?php
+		/*
+		* template name: tpl-login
+		*/
+		get_header();
+		?&gt;
+		&lt;form id=&quot;login-Form-box&quot; class=&quot;woocommerce-form woocommerce-form-login login&quot; method=&quot;post&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;auth-content&quot;&gt;&lt;/div&gt;
+				&lt;div class=&quot;col-12&quot;&gt;
+					&lt;div class=&quot;form-group&quot;&gt;
+						&lt;label for=&quot;emailID&quot; class=&quot;sr-only&quot;&gt;Email id&lt;/label&gt;
+						&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Email id&quot; id=&quot;emailID&quot; name=&quot;log&quot; required=&quot;required&quot; data-val=&quot;&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;col-12&quot;&gt;
+					&lt;div class=&quot;form-group&quot;&gt;
+						&lt;label for=&quot;password&quot; class=&quot;sr-only&quot;&gt;Password&lt;/label&gt;
+						&lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Password&quot; id=&quot;password&quot; name=&quot;pwd&quot; required=&quot;required&quot; data-val=&quot;&quot;&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;		
+				&lt;div class=&quot;col-12 text-center&quot;&gt;
+					&lt;div class=&quot;form-group&quot;&gt;
+						&lt;input type=&quot;hidden&quot; name=&quot;url&quot; value=&quot;&quot; id=&quot;urlRedirect&quot;&gt;
+						&lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; title=&quot;Login&quot;&gt;Login&lt;/button&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/form&gt;
+		&lt;?php
+		get_footer();
+		?&gt;
 	</code>
 </pre>
 <hr>

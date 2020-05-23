@@ -3,7 +3,6 @@
 * template name: tpl-login
 */
 get_header();
-
 ?>
 <form id="login-Form-box" class="woocommerce-form woocommerce-form-login login" method="post">
 	<div class="row">
@@ -30,3 +29,4 @@ get_header();
 </form>
 <?php
 get_footer();
+?>
