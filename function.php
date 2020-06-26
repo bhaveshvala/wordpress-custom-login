@@ -24,10 +24,30 @@ function en_scripts(){
 }
 add_action( 'wp_enqueue_scripts', 'en_scripts' );
 
-/*
-* Ajax for login action hook
-*/
 
+
+
+
+/*
+* Ajax for login check action hook
+*/
+add_action('wp_ajax_check_login', 'check_login' );
+add_action('wp_ajax_nopriv_check_login', 'check_login');
+
+function check_login() {
+	$username = $_REQUEST['username'];
+	$password = $_REQUEST['password'];
+	$user = get_user_by( 'login', $username );
+	if ( $user && wp_check_password($password, $user->user_pass, $user->ID) ) {
+	    echo "1";
+	} else {
+	    echo "0";
+	}
+	exit;
+}
+/*
+* Ajax for login success action hook
+*/
 add_action('wp_ajax_success_login', 'success_login' );
 add_action('wp_ajax_nopriv_success_login', 'success_login');
 function success_login() {
